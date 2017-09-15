@@ -32,8 +32,8 @@ final class PeopleSpec extends ObjectBehavior
 
     function it_sets_people()
     {
-        $this->setPeople('people.com');
+        $this->setFirstname('people.com');
 
-        $this->getPeople()->shouldReturn('people.com');
+        $this->getFirstname()->shouldReturn('people.com');
     }
 }
