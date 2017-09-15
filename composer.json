@@ -1,0 +1,44 @@
+{
+    "name": "encreinformatique/people",
+    "type": "library",
+    "description": "People handling for PHP applications.",
+    "keywords": ["people"],
+    "homepage": "http://www.encre-informatique.fr",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien Devergnies",
+            "homepage": "http://www.encre-informatique.fr"
+        }
+    ],
+    "require": {
+        "php": "^5.6|^7.0",
+
+        "doctrine/collections": "^1.3"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.2"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "EncreInformatique\\Component\\People\\": "" }
+    },
+    "autoload-dev": {
+        "psr-4": { "EncreInformatique\\Component\\People\\spec\\": "spec/" }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../*/*"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
