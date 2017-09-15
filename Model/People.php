@@ -14,7 +14,7 @@ namespace EncreInformatique\Component\People\Model;
 /**
  * @author Julien Devergnies <j.devergnies@outlook.com>
  */
-class People
+abstract class People
 {
     /**
      * @var integer $id
@@ -24,12 +24,12 @@ class People
     /**
      * @var string $firstname
      */
-    private $firstname;
+    protected $firstname;
 
     /**
      * @var string $lastname
      */
-    private $lastname;
+    protected $lastname;
 
     /**
      * @var datetime $creation
